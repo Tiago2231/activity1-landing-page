@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <!-- Desktop Navigation -->
+    <nav id="desktop-nav">
+        <div class="logo">Web Development</div>
+        <ul class="nav-links">
+            <li><a href="#Introduction">Introduction</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#Importance">Importance</a></li>
+            <li><a href="#Tools">Tools</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hamburger Navigation -->
+    <nav id="hamburger-nav">
+        <div class="logo">Web Development</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <ul>
+                    <li><a href="#Introduction" onclick="toggleMenu()">Introduction</a></li>
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#Importance" onclick="toggleMenu()">Importance</a></li>
+                    <li><a href="#Tools" onclick="toggleMenu()">Tools</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Profile Section -->
+    <div class="profile-bg"></div>
+    <section id="profile">
+        <div class="section__pic-container">
+            <!-- <img src="./assets/profile-pic2.png" alt="Profile Picture" class="prof"> -->
+        </div>
+        <div class="section__text prof-text">
+            <div class="text-line">
+                <p class="section__text__p1 prof-texts1" id="Introduction">Introduction To...</p>
+                <h1 class="title prof-texts1">Web Development</h1>
+            </div>
+            <div class="text-line2">
+                <p class="section__text__p2 prof-texts1">Web development is the process of creating websites for online or intranet use.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about">
+        <p class="section__text__p1">Get to Know More About Web Development</p>
+        <h1 class="title">About</h1>
+        <p class="section__text__p1">The diverse discipline of web development is centered on creating and managing websites that
+           allow users to access and engage with material online. Creating the underlying code that powers a website and developing
+            user interfaces are just two of the many tasks involved in this process. Web development makes sure that websites are both
+             aesthetically beautiful and technically sound, giving users a seamless experience by combining different technology and
+              design principles.</p>
+        <br><br><br><br><br>  
+        <h1 class="title" id="Importance">Importance Of Web Development</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src=" assests/about-pic1.jpg"   class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="assests/experience.png" alt="Experience Icon" class="icon">
+                        <h3>Brings Businesses to Life</h3>
+                        <p>Web development is crucial for turning business ideas into reality, as a strong online presence 
+                          showcases a company's culture, values, and supports branding and marketing efforts.</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assests/experience.png" alt="Experience Icon" class="icon">
+                        <h3>Building Relationships With Customers</h3>
+                        <p>Web development is key to fostering customer relationships by ensuring your website is user-friendly,
+                           modern, and reliable. An outdated or difficult-to-navigate site can erode customer trust and harm your business.</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assests/experience.png" alt="Education Icon" class="icon">
+                        <h3>Creating Leads and Sales</h3>
+                        <p>Web development is vital for attracting leads and sales, as it helps customers find your business online. 
+                          Without a website, you risk losing potential customers to competitors.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assests/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='#Tools'">
+    </section>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>    
+    <!-- Experience Section -->
+    <section id="importance">
+      <p class="section__text__p1">Tools</p>
+      <h1 class="title" id="Tools">Explore My Tools For Web Development</h1>
+      <div class="importance-details-container">
+          <div class="about-containers">
+              <!-- Project 1 - HTML Flip Card -->
+              <div class="col-xs-12 col-sm-6 col-md-4">
+                  <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                      <div class="mainflip">
+                          <div class="frontside">
+                              <div class="card">
+                                  <div class="card-body text-center">
+                                      <img class="img-fluid project-img" src="assests/project-1.png" alt="Project 1">
+                                      <h2 class="importance-sub-title project-title">HTML</h2>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="backside">
+                              <div class="card">
+                                  <div class="card-body text-center mt-4">
+                                      <h2 class="importance-sub-title project-title">HTML</h2>
+                                      <p>HTML is the standard markup language used for creating and structuring content on the web. It defines the structure and layout of a web page using elements like headings, paragraphs, links, images, and other multimedia.</p>
+                                      <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.w3schools.com/html/default.asp'">Learn More</button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+  
+              <!-- Project 2 - CSS Flip Card -->
+              <div class="col-xs-12 col-sm-6 col-md-4">
+                  <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                      <div class="mainflip">
+                          <div class="frontside">
+                              <div class="card">
+                                  <div class="card-body text-center">
+                                      <img class="img-fluid project-img" src="./assests/project-2.png" alt="Project 2">
+                                      <h2 class="importance-sub-title project-title">CSS</h2>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="backside">
+                              <div class="card">
+                                  <div class="card-body text-center mt-4">
+                                      <h2 class="importance-sub-title project-title">CSS</h2>
+                                      <p>Cascading Style Sheets is a style sheet language used for specifying the presentation and styling of a document written in a markup language such as HTML or XML.</p>
+                                      <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.w3schools.com/css/default.asp'">Learn More</button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+  
+              <!-- Project 3 - JavaScript Flip Card -->
+              <div class="col-xs-12 col-sm-6 col-md-4">
+                  <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                      <div class="mainflip">
+                          <div class="frontside">
+                              <div class="card">
+                                  <div class="card-body text-center">
+                                      <img class="img-fluid project-img" src="./assests/project-3.png" alt="Project 3">
+                                      <h2 class="importance-sub-title project-title">JavaScript</h2>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="backside">
+                              <div class="card">
+                                  <div class="card-body text-center mt-4">
+                                      <h2 class="importance-sub-title project-title">JavaScript</h2>
+                                      <p>JavaScript is a versatile, high-level programming language primarily used to create interactive and dynamic content on websites.</p>
+                                      <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.w3schools.com/js/default.asp'">Learn More</button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <img src="./assests/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='#Introduction'">
+  </section>
+  
+    <!-- Footer -->
+    <footer>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#Introduction">Introduction</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Importance">Importance</a></li>
+                <li><a href="#Tools">Tools</a></li>
+            </ul>
+        </nav>
+        <p>Copyright &copy; 2024 RYOM JAMES ALEMANIA. All Rights Reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
